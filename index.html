@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bedour — Business System Analyst</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <header class="site-header">
+      <div class="intro">
+        <h1>Bedour</h1>
+        <p class="role">Business System Analyst — 3 years working on the IPMP project</p>
+      </div>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+  <main id="siteMain">
+      <section id="about">
+        <h2>About Me</h2>
+        <p>Hello — I'm Bedour, a Business System Analyst with three years of experience working on the IPMP project.
+        I focus on requirements analysis, process improvement, stakeholder communication, and delivering actionable specifications that bridge business and technical teams.</p>
+      </section>
+
+      <section id="experience">
+        <h2>Experience</h2>
+        <article>
+          <h3>IPMP Project</h3>
+          <p>Worked across analysis, documentation and testing phases. Key responsibilities included eliciting requirements, producing process maps, and coordinating with developers and QA to ensure deliverables matched business needs.</p>
+        </article>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, send me a message using the form below.</p>
+
+        <form id="contactForm" class="contact-form" data-email="replace-with-your-email@example.com" data-formspree-endpoint="" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text">
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit">Send message</button>
+            <button type="button" id="colorBtn">Random Background</button>
+          </div>
+
+          <p id="formMessage" class="form-message" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+        <div class="main-controls">
+          <button type="button" id="mainColorBtn" class="secondary">Random Main Background</button>
+        </div>
+
+    <footer>
+      <small>Made with vanilla HTML, CSS, and JS — deploy with AWS Amplify</small>
+    </footer>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

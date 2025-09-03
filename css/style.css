@@ -1,0 +1,31 @@
+:root{
+  --bg: #f8fafc;
+  --accent: #2563eb;
+  --text: #0f172a;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;background:var(--bg);color:var(--text);padding:2rem}
+.container{max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:1.25rem;min-height:80vh;padding:1rem 1.25rem}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:1.25rem;padding:0.5rem 0}
+.intro h1{font-size:clamp(1.5rem,3vw,2.5rem);margin-bottom:0.25rem;color:var(--accent)}
+.role{color:#334155}
+.site-nav a{margin-left:0.75rem;color:var(--accent);text-decoration:none}
+
+main{background:#fff;border-radius:12px;padding:2rem;box-shadow:0 8px 22px rgba(2,6,23,0.07);min-height:60vh;display:flex;flex-direction:column}
+.main-controls{display:flex;justify-content:flex-end;margin-top:auto}
+#siteMain{transition:background 400ms ease}
+section{margin-bottom:1rem}
+section h2{margin-bottom:0.5rem}
+
+.contact-form{display:grid;grid-template-columns:1fr;gap:0.5rem;max-width:640px}
+.contact-form label{font-size:0.9rem;color:#374151}
+.contact-form input,.contact-form textarea{padding:0.6rem;border:1px solid #e6eef8;border-radius:8px;font-size:1rem}
+.form-actions{display:flex;gap:0.5rem;margin-top:0.5rem}
+button{background:var(--accent);color:white;border:none;padding:0.6rem 1rem;border-radius:8px;cursor:pointer}
+button.secondary{background:#64748b}
+.form-message{margin-top:0.5rem;color:#065f46}
+
+footer{margin-top:0.5rem;color:#64748b;text-align:center}
+
+@media (prefers-color-scheme:dark){:root{--bg:#0b1220;--text:#e6eef8;--accent:#60a5fa}main{background:#071024}}

@@ -1,0 +1,10 @@
+# Ignore OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/
+.env
+.aws
+# logs
+npm-debug.log*
+yarn-error.log*
